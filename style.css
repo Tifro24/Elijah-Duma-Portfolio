@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #184e77;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/big-bg-elijah2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}
+
+.container{
+    padding: 10px 10%;
+    background-color: white;
+    box-shadow: 0px 2px 15px black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+    
+}
+
+
+nav ul li a{
+    color: #1e6091;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #1e6091;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    width: 60%;
+    margin-top: 7%;
+    color: white;
+    font-size: 20px;
+    padding: 50px 7%;
+}
+
+.header-text h1{
+    font-size: 75px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.header-text p{
+    padding-left: 5px;
+    margin-top: 15px;
+}
+
+.header-text h1 span{
+    color: #d9ed92;
+}
+
+#skills{
+    margin-top: 150px;
+}
+
+.skillCon{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.skillCon img{
+    width: 100px;
+}
+
+.skillBox{
+    background-color: white;
+    margin: 20px 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: #1e6091 ;
+    width: 400px;
+    height: 150px;
+    transition: 0.3s;
+}
+
+.skillBox:hover{
+    outline: 8px solid rgb(217, 237, 146);
+}
+
+#skills h1{
+color: white;
+font-size: 70px;
+text-align: center;
+padding: 20px;
+}
+
+#css img{
+    width: 110px;
+}
+
+#html img{
+    width: 90px;
+}
+
+#projects{
+    margin-top: 200px;
+}
+
+.projectsCon{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+
+.card{
+    width: 287px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.2s;
+}
+
+.card video{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.2s;
+}
+
+
+#vid2{
+    width: 101%
+}
+
+#projects h1{
+    color: white;
+font-size: 70px;
+text-align: center;
+padding: 20px;
+}
+
+.card-content{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #184e77;
+
+}
+
+.card-content p{
+    color: #184e77;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content span{
+    color: rgb(254, 19, 19);
+}
+
+.btn{
+    margin-top: auto;
+    display: inline-block;
+    padding: 10px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #184e77;
+    color: white;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: auto;
+    transition: 0.2s;
+}
+
+.btn:hover{
+    outline: 5px solid rgb(254, 19, 19);
+}
+
+
+.row{
+    display: flex;
+    padding: 10px 8%;
+    flex-wrap: wrap;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 65%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-left p img{
+    color: white;
+    margin-right: 15px;
+    width: 15px;
+}
+
+
+
+.contact-left h1{
+    color: white;
+    font-size: 60px;
+}
+
+.social-icons{
+    margin-top: 35px;
+    
+}
+
+.social-icons a{
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+    transition: 0.5s;
+    color: white;
+    font-size: 40px;
+}
+
+.social-icons a:hover{
+    transform: translateY(-5px);
+    color: #d9ed92;
+}
+
+.btn2{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #d9ed92;
+    transition: 0.5s;
+    margin-top: 35px;
+    background-color: #184e77;
+    cursor: pointer;
+    
+}
+
+.btn2:hover{
+    background-color:#d9ed92 ;
+    color: #184e77;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 10px 50px;
+    font-size: 18px;
+    margin-top: 20px; 
+}
+
+#contact{
+    margin-top: 250px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background-image: linear-gradient(#184e77, #092a44);
+    font-weight: 300;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+nav .fas{
+    display: none;
+}
+
+.fa-paper-plane{
+    font-size: 15px;
+    color: white;
+    padding-right: 5px;
+    transition: 0.5s;
+}
+
+.fa-paper-plane:hover{
+    transform: translateY(-5px);
+    color: #d9ed92;
+}
+
+
+.reveal{
+    transform: translateY(10%);
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 0.5s ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    filter: blur(0px);
+    opacity: 1;
+
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        background-image: url(images/Phone-bg.jpg);
+    }
+
+    .header-text{
+        width: 100%;
+        margin-top: 80%;
+        color: white;
+        font-size: 18px;
+        padding: 30px 7%;
+    }
+    
+    .header-text h1{
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .header-text p{
+        padding-left: 5px;
+        margin-top: 15px;
+        width: 80%
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        color: #184e77;
+    }
+
+    nav ul{
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav .fas{
+        cursor: pointer;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    
+    .copyright{
+        font-size: 12px;
+    }
+}

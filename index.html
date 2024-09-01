@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/script.js"></script>
+    <script defer src="https://kit.fontawesome.com/abf8bfc770.js" crossorigin="anonymous"></script>
+    <title>Elijah Duma</title>
+</head>
+<body>
+    <!-- Header -->
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img id="logo" src="/images/Elijah-logo-v1.png" alt="" width="100px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+            <div class="header-text">
+                <p>Junior Software Developer</p>
+                <h1>Hi, I'm <span id="title"></span></h1>
+                <p>An individual that is eager to delve into the world of Software Development, driven by a passion for creativity and a willingness to learn.</p>
+            </div>
+    </div>
+    </header>
+
+    <!-- Skills Section -->
+
+    <section id="skills" class="reveal">
+        <h1>Skills</h1>
+        <div class="skillCon">
+            <div class="skillBox" id="html">
+                <img src="/images/html-img.png" alt="">
+                <p>HTML</p>
+            </div>
+            <div class="skillBox" id="css">
+                <img src="/images/css-img.png" alt="">
+                <p>CSS</p>
+            </div>
+            <div class="skillBox" id="javascript">
+                <img src="/images/javascript-img.png" alt="">
+                <p>JavaScript</p>
+            </div>
+            <div class="skillBox" id="python">
+                <img src="/images/python-img.png" alt="">
+                <p>Python</p>
+            </div>
+            <div class="skillBox" id="mysql">
+                <img src="/images/mysql-img.png" alt="">
+                <p>MySql</p>
+            </div>
+            <div class="skillBox" id="photoshop">
+                <img src="/images/photoshop-img.png" alt="">
+                <p>Photoshop</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section id="projects" class="reveal">
+        <h1>Projects</h1>
+        <div class="projectsCon">
+            <div class="card">
+                <a href="https://tifro24.github.io/Simple-Jump-V2/" target="_blank"><video id="vid1" src="/media/simple-jump-vid.mp4"></video></a>
+                <div class="card-content">
+                    <h3>Simple Jump</h3>
+                    <p>This is a side-scroller platformer game I created using JavaScript and the HTML Canvas library, 
+                        with the design heavily influenced by Super Mario. <span>Click on the video to play.</span></p>
+                </div>
+                <a href="https://github.com/Tifro24/Simple-Jump-V2/tree/main" class="btn" target="_blank"> GitHub</a>
+            </div>
+            <div class="card">
+                <video id="vid2" src="/media/planet-defender-vid.mp4"></video>
+                <div class="card-content">
+                    <h3>Planet Defender</h3>
+                    <p>Another game that I created, akin to an 'apple catcher' game. You are a Planet Defender, 
+                        protecting the planet from meteorites falling from the sky. 
+                        This was also made using JavaScript and HTML Canvas. <span>Still under development.</span></p>
+                </div>
+                <a href="https://github.com/Tifro24/Planet-Defender" class="btn" target="_blank"> GitHub</a>
+            </div>
+            <div class="card">
+                <img id="sunimg" src="/images/sun-icon.png" alt="">
+                <div class="card-content">
+                    <h3>Weather App</h3>
+                    <p>An app that provides information on the weather of any location inputted. 
+                        It fetches real-life data using an API. Built using Python.</p>
+                </div>
+                <a href="https://github.com/Tifro24/Python-Project-Weather-App-v2/tree/main" class="btn" target="_blank"> GitHub</a>
+            </div>
+            <div class="card">
+                <img src="/images/anime-fight.png" alt="">
+                <div class="card-content">
+                    <h3>Anime Fight Database</h3>
+                    <p>This is a database I created which consists of a random collection of heroes and villains from the world of Anime. 
+                        It logs the history of their battles as well as their individual characteristics. Built using MySQL. </p>
+                </div>
+                <a href="https://tifro24.github.io/Anime-Fight-Database/" class="btn" target="_blank"> Demo</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section>
+        <div id="contact" class="reveal">
+            <div class="contactCon">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1>Contact Me</h1>
+                        <p> <a href="mailto:ElijahDuma@hotmail.com" target="_blank"><i class="fa-solid fa-paper-plane"></i></a> ElijahDuma@hotmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Tifro24" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.linkedin.com/in/elijah-duma-ab83a2216" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="/images/Elijah Duma CV.docx" class="btn2" download>Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="https://formspree.io/f/mvgpbaje" method='POST' target="_blank">
+                            <input type="text" name="Name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                            <button type="submit" class="btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Elijah Duma. All rights reserved.</p>
+        </div>
+    </section>
+</body>
+</html>
