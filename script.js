@@ -7,6 +7,7 @@ const title = new Typed("#title",{
 
 const vid1 = document.querySelector('#vid1')
 const vid2 = document.querySelector('#vid2')
+const videoText = document.querySelector('.video-container .video-text')
 
 vid1.addEventListener('mouseenter', () =>{
     vid1.play()
@@ -18,10 +19,12 @@ vid1.addEventListener('mouseleave', () =>{
 
 vid2.addEventListener('mouseenter', () =>{
     vid2.play()
+    videoText.classList.remove('active')
 })
 
 vid2.addEventListener('mouseleave', () =>{
     vid2.pause()
+    videoText.classList.add('active')
 })
 
 
